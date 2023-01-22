@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins&display=swap');
+
+* > * {
+    font-family: 'Poppins', sans-serif;
+    @apply text-zinc-300;
+}
+
+body{
+    @apply bg-neutral-800 overflow-hidden;
+}
+
+@layer components{
+    .circle{
+        @apply mt-52 border rounded-full absolute;
+    }
+
+    .Hero_btn{
+        @apply px-5 border border-[rgb(40,40,40)] text-xs py-2 rounded-2xl;
+        @apply mx-1 tracking-widest text-gray-500 transition-all z-10;
+        @apply hover:text-gray-100/40 hover:border-gray-100/40
+    }
+
+    .title{
+        @apply tracking-[20px] absolute text-2xl text-gray-500 uppercase top-24
+    }
+
+    .disc{
+        font-family: 'Nunito Sans', sans-serif !import;
+    }
+}
